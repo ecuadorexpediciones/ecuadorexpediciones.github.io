@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ecuador Expediciones</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/w3.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+    </style>
+</head>
+<body>
+<!-- Reference: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_band&stacked=h -->
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NOSOTROS</a>
+        <a href="#packages" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PAQUETES</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOURS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTO</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">MÁS <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#location" class="w3-bar-item w3-button">Ubícanos</a>
+                <a href="#legal" class="w3-bar-item w3-button">Aspecto Legal</a>
+                <a href="#" class="w3-bar-item w3-button">Términos y Condiciones</a>
+            </div>
+        </div>
+<!--        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>-->
+    </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#aboutus" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">NOSOTROS</a>
+    <a href="#packages" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PAQUETES</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACTO</a>
+    <a href="#location" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">UBÍCANOS</a>
+    <a href="#legal" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ASPECTO LEGAL</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TÉRMINOS Y CONDICIONES</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <div class="w3-container w3-content w3-center" style="max-width:90%" id="slider">
+        <img src="/images/gallery/logo.png" alt="Logo" class="logo">
+        <!-- Automatic Slideshow Images -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="/images/slide/01.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Ecuador</h3>
+                <p><b>¡Vive su magia!</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="/images/slide/02.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Amazonía</h3>
+                <p><b>Conecta con la naturaleza</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="/images/slide/03.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Fauna viva</h3>
+                <p><b>Únicos en su especie</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="/images/slide/04.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Siente</h3>
+                <p><b>Ecuador extremo</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="/images/slide/05.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Convive</h3>
+                <p><b>Disfruta de la fauna y flora</b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- The aboutus Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="aboutus">
+        <h2 class="w3-wide w3-animate-top">NOSOTROS</h2>
+        <p class="w3-opacity"><i>Ecuador Expediciones</i></p>
+        <p class="w3-justify">Ecuador Expediciones Sebru Cia. Ltda. empresa residente en Quito – Ecuador con RUC 1793147739001 brinda asistencia profesional para viajar o hacer turismo en Ecuador, Colombia, Perú, Cancún, Miami FL y otros.</p>
+        <p class="w3-justify">Nuestro esfuerzo está centrado en brindar respuestas rápidas, precisas y eficientes. Buscamos satisfacer a nuestros clientes con un buen servicio, asesoramiento, compromiso y precio. Nos encargamos de dar solución a posibles inconvenientes antes, durante ó después de su viaje.</p>
+
+        <div class="w3-row w3-padding-32">
+            <h2 class="w3-animate-top">Nuestros Objetivos</h2>
+            <p class="w3-justify">Posicionarse como empresa turística a través de la comercialización de servicios y productos turísticos, con altos estándares de calidad, manteniendo la confiabilidad, credibilidad y fidelidad de nuestros clientes.</p>
+            <p class="w3-justify">Capacitar a nuestro talento humano,  para prestar una atención personalizada y eficiente a nuestros clientes, para brindarles las mejores vacaciones durante su estancia.</p>
+        </div>
+        <div class="w3-row w3-padding-32">
+            <h2 class="w3-animate-top">Misión</h2>
+            <p class="w3-justify">Representar, liderar y servir en la industria del turismo. Descubrir, compartir y disfrutar de mágicos viajes e importantes aventuras en cada uno de nuestros paquetes turísticos. Contamos con una gran variedad de las mejores cadenas hoteleras que le ofrecen confort, le permite disfrutar de su viaje y tener una experiencia placentera y con deleite.</p>
+        </div>
+        <div class="w3-row w3-padding-32">
+            <h2 class="w3-animate-top">Visión</h2>
+            <p class="w3-justify">Consolidarnos como una Agencia de Viajes reconocida a nivel nacional e internacional, en el transcurso de los siguientes 5 años, basados en el mejoramiento continuo además de la confianza y seguridad que le ofrecemos a nuestros clientes,  presentando innovadores servicios y asegurando una actividad turística estable, promoviendo un el desarrollo de la economía de nuestro país.</p>
+        </div>
+    </div>
+
+    <!-- The legal Section -->
+    <div class="w3-black" id="legal">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-animate-top">LEGAL</h2>
+            <p class="w3-centered">
+                Ecuador Expediciones Sebru Cia. Ltda.  <br/>
+                RUC 1793147739001 <br/>
+                Número Trámite Bomberos MDMQ: 2021WEBLUAE211417 <br/>
+                Número Informe: 1905382742308 <br/>
+                Número Licencia: 377152 <br/>
+                Número Predio: 1234418 <br/>
+                Número Patente: 579196 <br/>
+                Quito – Ecuador  <br/>
+            </p>
+        </div>
+    </div>
+
+    <!-- The packages Section -->
+    <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:800px" id="packages">
+        <h2 class="w3-wide w3-animate-top w3-border-black">PAQUETES</h2>
+        <img src="/images/gallery/card/front01.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:30%">
+        <img src="/images/gallery/card/back.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:30%">
+        <img src="/images/gallery/card/front02.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:30%"><br/>
+        <div class="w3-third w3-centered ">
+            <p>Paquete Ópera</p>
+            <img src="/images/packages/Opera.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:30%">
+            <p class="w3-left-align">
+                10 noches $234.00 <br/>
+                1 noche gratis <br/>
+                4 consumo mínimo <br/>
+                5 2×1 <br/>
+            </p>
+        </div>
+        <div class="w3-third w3-centered ">
+            <p>Paquete Gold</p>
+            <img src="/images/packages/Gold.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:30%">
+            <p class="w3-left-align">
+                20 noches de hospedaje $434<br/>
+                7 días 6 noches internacionales en Cancun México<br/>
+                2 noches gratuitas en Costa, Sierra, Oriente<br/>
+                6 noches consumo mínimo<br/>
+                6 2×1 <br/>
+            </p>
+        </div>
+        <div class="w3-third w3-centered ">
+            <p>Paquete Premium</p>
+            <img src="/images/packages/Premium.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:30%">
+            <p class="w3-left-align">
+                14 noches $339.00 <br/>
+                2 noches gratuitas en Costa, Sierra y Oriente <br/>
+                6 consumo mínimo <br/>
+                6 2×1 <br/>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- The Tour Section -->
+    <div class="w3-black" id="tour">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">TOURS</h2>
+            <p class="w3-opacity w3-center"><i>Reserva ya!</i></p><br>
+
+            <ul class="w3-ul w3-border w3-white w3-text-grey">
+                <li class="w3-padding">2021 <span class="w3-tag w3-red w3-margin-left">Agotados</span></li>
+                <li class="w3-padding">2022 <span class="w3-tag w3-red w3-margin-left">Agotados</span></li>
+                <li class="w3-padding">2023 <span class="w3-badge w3-right w3-margin-right">Por agotarse</span></li>
+            </ul>
+
+            <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+
+                <div class="w3-third w3-margin-bottom">
+                    <img src="/images/gallery/packages/Orlando.jpeg" alt="Orlando" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Orlando</b></p>
+                        <p class="w3-opacity">Próximo a salir</p>
+                        <p>Realiza tu reserva ya.</p>
+                        <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>-->
+                        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-margin-bottom w3-hide-small w3-black">Reservar</a>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <img src="/images/gallery/packages/Punta-cana.jpeg" alt="Punta-cana" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Punta Cana</b></p>
+                        <p class="w3-opacity">Próximo a salir</p>
+                        <p>Realiza tu reserva ya.</p>
+                        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-margin-bottom w3-hide-small w3-black">Reservar</a>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <img src="/images/gallery/packages/Curacao.jpeg" alt="Curacao" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Curacao</b></p>
+                        <p class="w3-opacity">Próximo a salir</p>
+                        <p>Realiza tu reserva ya.</p>
+                        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-margin-bottom w3-hide-small w3-black">Reservar</a>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <img src="/images/gallery/packages/Cancun-mexico.jpeg" alt="Cancun-mexico" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Cancun-mexico</b></p>
+                        <p class="w3-opacity">Próximo a salir</p>
+                        <p>Realiza tu reserva ya.</p>
+                        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-margin-bottom w3-hide-small w3-black">Reservar</a>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <img src="/images/gallery/packages/Cancun-oasis.jpeg" alt="Cancun-oasis" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Cancun-oasis</b></p>
+                        <p class="w3-opacity">Próximo a salir</p>
+                        <p>Realiza tu reserva ya.</p>
+                        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-margin-bottom w3-hide-small w3-black">Reservar</a>
+                    </div>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <img src="/images/gallery/packages/Cancun-radiante.jpeg" alt="Cancun-radiante" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Cancun-radiante</b></p>
+                        <p class="w3-opacity">Próximo a salir</p>
+                        <p>Realiza tu reserva ya.</p>
+                        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-margin-bottom w3-hide-small w3-black">Reservar</a>
+                    </div>
+                </div>
+
+<!--                <div class="w3-third w3-margin-bottom">-->
+<!--                    <img src="/images/gallery/Xxxxxx.jpeg" alt="Xxxxxx" style="width:100%" class="w3-hover-opacity">-->
+<!--                    <div class="w3-container w3-white">-->
+<!--                        <p><b>Xxxxxx</b></p>-->
+<!--                        <p class="w3-opacity">Próximo a salir</p>-->
+<!--                        <p>Realiza tu reserva ya.</p>-->
+<!--                        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-margin-bottom w3-hide-small w3-black">Reservar</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Ticket Modal -->
+    <div id="ticketModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+        <span onclick="document.getElementById('ticketModal').style.display='none'"
+              class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+            </header>
+            <div class="w3-container">
+                <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="How many?">
+                <p><label><i class="fa fa-user"></i> Send To</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+                <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACTO</h2>
+        <p class="w3-opacity w3-center"><i> Para ser atendido por servicio al cliente comunicarse a los siguientes números telefónicos:</i></p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i> Quito, Ecuador<br>
+                <i class="fa fa-phone" style="width:30px"></i> Reservaciones: +593 96 028 4349<br>
+                <i class="fa fa-phone" style="width:30px"></i> Atención Premium: +593 96 213 7331<br>
+                <i class="fa fa-phone" style="width:30px"></i> Atención Gold: +593 99 537 3383<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: info@ecuadorexpediciones.com<br>
+            </div>
+<!--            <div class="w3-col m6">-->
+<!--                <form action="/action_page.php" target="_blank">-->
+<!--                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">-->
+<!--                        <div class="w3-half">-->
+<!--                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">-->
+<!--                        </div>-->
+<!--                        <div class="w3-half">-->
+<!--                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">-->
+<!--                    <button class="w3-button w3-black w3-section w3-right" type="submit">ENVIAR</button>-->
+<!--                </form>-->
+<!--            </div>-->
+        </div>
+    </div>
+
+    <!-- The Location Section -->
+    <div class="w3-black w3-container w3-content w3-padding-64 " id="location">
+        <div class="w3-container w3-content w3-padding-16" style="max-width:800px">
+
+            <h2 class="w3-wide w3-center">Ubícanos</h2>
+            <p class="w3-opacity w3-center"><i> Ecuador Expediciones </i></p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col w3-large w3-margin-bottom  w3-cent">
+                    <i class="fa fa-map-marker" style="width:80px"></i> <br> Quito – Ecuador <br>
+                    Italia N32-10 y Mariana de Jesús <br>
+                    Edificio Mariana de Jesús <br>
+                    Piso 5 Oficina 502 <br>
+                </div>
+            </div>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m12"><!-- Image of location/map -->
+                    <img src="/images/gallery/mapaEcuadorExpediciones.png" class="w3-image w3-greyscale-min" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Page Content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by > andyeryto</a></p>
+</footer>
+
+<script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

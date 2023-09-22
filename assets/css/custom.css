@@ -1,0 +1,7 @@
+.logo {
+    position: absolute; /* Permite el posicionamiento absoluto con respecto al contenedor */
+    top: 10px; /* Coloca el logotipo en la parte superior */
+    right: 40px; /* Coloca el logotipo en la parte derecha */
+    max-width: 15%; /* Establece el ancho máximo de la imagen del logotipo */
+    z-index: 1; /* Controla la superposición del logotipo sobre el contenido principal */
+}
