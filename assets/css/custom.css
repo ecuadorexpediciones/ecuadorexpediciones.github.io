@@ -5,3 +5,12 @@
     max-width: 15%; /* Establece el ancho máximo de la imagen del logotipo */
     z-index: 1; /* Controla la superposición del logotipo sobre el contenido principal */
 }
+
+.comunicado-oficial {
+    padding: 32px 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.comunicado-justificado {
+    text-align: justify;
+}
